@@ -4,13 +4,11 @@ import java.util.Objects;
 
 public record LoyaltyPoints(Integer value) implements Comparable<LoyaltyPoints> {
 
-
     public static final LoyaltyPoints ZERO = new LoyaltyPoints(0);
 
     public LoyaltyPoints() {
         this(0);
     }
-
 
     public LoyaltyPoints(Integer value) {
         Objects.requireNonNull(value);
